@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Group Detection - Simulation</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #7f1d1d;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .background-image {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        .center-container {
+            text-align: center;
+            z-index: 1;
+        }
+
+        .center-container h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 24px;
+        }
+
+        .simulate-button {
+            padding: 16px 32px;
+            background-color: #dc2626;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .simulate-button:hover {
+            background-color: #b91c1c;
+        }
+    </style>
+</head>
+<body>
+    <img class="background-image" src="https://storage.googleapis.com/a1aa/image/vZhSjTdxyupNHxYE8v7Co2e0MheN2lxOWnD1VsSye9p7jUgnA.jpg" alt="Background image of blood cells">
+
+    <div class="center-container">
+        <h1>Blood Group Detection Simulation</h1>
+        <button class="simulate-button" onclick="startBiometricScan()">Simulate</button>
+    </div>
+
+    <script>
+        function startBiometricScan() {
+            // Mockup biometric scanning process
+            let userScanned = confirm("Simulating biometric scan. Place finger on sensor!");
+
+            if (userScanned) {
+                alert("Biometric scan successful! Blood group detected.");
+            } else {
+                alert("Biometric scan failed. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>
