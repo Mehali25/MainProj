@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <h1>Blood Group Detection Result</h1>
+    <p><strong>Detected Blood Group:</strong> {{ blood_group }}</p>
+    <img src="{{ url_for('static', filename='uploads/' + filepath.split('/')[-1]) }}" alt="Fingerprint" style="max-width: 300px;">
+    <a href="/">Upload Another Fingerprint</a>
+</body>
+</html>
